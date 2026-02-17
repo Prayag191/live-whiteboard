@@ -64,3 +64,16 @@ We are using **PostgreSQL** to store live whiteboard data.
 1. Clone the repo:
    ```bash
    git clone https://github.com/yourusername/live-whiteboard-backend.git
+
+2. Configure DB in application.properties:
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/live_whiteboard
+spring.datasource.username=postgres
+spring.datasource.password=yourpassword
+spring.jpa.hibernate.ddl-auto=update
+
+3. Run with Maven:
+
+mvn spring-boot:run
+
+4. APIs will be available at http://localhost:8080/api/...
